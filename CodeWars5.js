@@ -37,3 +37,8 @@ const sequenceSum = (begin, end, step) => {
 function typeOfSum(a, b) {
     return typeof(a + b);
 }
+
+function getMiddle(s)
+{
+    return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
+}
