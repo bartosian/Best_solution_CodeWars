@@ -17,3 +17,19 @@ function sumArray(array) {
 }
 
 // link on codeWars https://www.codewars.com/kata/576b93db1129fcf2200001e6/solutions/javascript
+
+const sequenceSum = (begin, end, step) => {
+    if(begin > end) return 0;
+
+    let start = begin;
+    let ended = end;
+    let step1 = step;
+    let result = start;
+
+    while((start + step1) <= end) {
+        start += step1;
+        result += start;
+    }
+
+    return result;
+};
