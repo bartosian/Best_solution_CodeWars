@@ -33,3 +33,7 @@ const sequenceSum = (begin, end, step) => {
 
     return result;
 };
+
+function typeOfSum(a, b) {
+    return typeof(a + b);
+}
