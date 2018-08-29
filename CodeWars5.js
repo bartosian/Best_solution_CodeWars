@@ -38,7 +38,28 @@ function typeOfSum(a, b) {
     return typeof(a + b);
 }
 
-function getMiddle(s)
-{
+function getMiddle(s) {
     return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
 }
+
+
+
+var whatTimeIsIt = function(angle) {
+    let minutesAll = 1440;
+    let degreesAll = 360;
+
+    let minutesInAngle = angle * 2;
+    let minutes = String(Math.floor(minutesInAngle % 60));
+    let hours = String(Math.floor(minutesInAngle - minutes) / 60);
+
+
+    if(minutes.length === 1) minutes = "0" + minutes;
+    if(hours === '0') hours = '12';
+    if(hours.length === 1) hours = "0" + hours;
+
+    return `${hours}:${minutes}`;
+
+}
+
+
+
