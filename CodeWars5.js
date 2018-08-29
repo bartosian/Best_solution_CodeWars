@@ -69,20 +69,40 @@ function findSecretMessage(paragraph) {
 
     let phrasesArr = paragraph.split(". ");
     phrasesArr = phrasesArr.map( p => {
-        return  p.replace(".", '').split(" ");
+        return  p.replace(".", '').toLowerCase().split(" ");
     });
 
     let duplArr = [];
 
     for(let i = 0; i < phrasesArr.length; i++) {
 
-        for(let j = i + 1; j < phrasesArr.length)
+       for(let j = i + 1; j < phrasesArr.length;) {
 
+           if(duplArr.length) {
+               return duplArr.join(" ");
+           }
+
+           for(let z = 0; z < phrasesArr[j].length; z++) {
+
+               for(let r = 0; r < phrasesArr[i].length; r++) {
+
+                   if(phrasesArr[i][r] === phrasesArr[j][z]) {
+                        if(!duplArr.includes(phrasesArr[i][r])) {
+                            duplArr.push(phrasesArr[i][r]);
+
+                        }
+
+                   }
+
+               }
+
+           }
+
+       }
     }
 
-    console.log(phrasesArr);
 
 }
 
 
-findSecretMessage("This is a test. this test is fun.");
+findSecretMessage("This is a test. this this test test is is is is fun.");
