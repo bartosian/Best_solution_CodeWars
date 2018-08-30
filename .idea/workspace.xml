@@ -20,8 +20,11 @@
       <file leaf-file-name="CodeWars5.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CodeWars5.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="129" />
+            <state relative-caret-position="452">
+              <caret line="175" column="1" selection-start-line="175" selection-start-column="1" selection-end-line="175" selection-end-column="1" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,12 +110,12 @@
       <workItem from="1535505999989" duration="209000" />
       <workItem from="1535546032287" duration="4794000" />
       <workItem from="1535566255256" duration="1043000" />
-      <workItem from="1535632376686" duration="583000" />
+      <workItem from="1535632376686" duration="788000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8311000" />
+    <option name="totallyTimeSpent" value="8516000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="23" width="1034" height="947" extended-state="0" />
@@ -123,9 +126,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28705883" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28705883" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.37764707" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.37764707" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -148,6 +151,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1905">
           <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -181,8 +187,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CodeWars5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="129" />
+        <state relative-caret-position="452">
+          <caret line="175" column="1" selection-start-line="175" selection-start-column="1" selection-end-line="175" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
