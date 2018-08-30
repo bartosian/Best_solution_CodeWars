@@ -233,6 +233,29 @@ function sortArray(arr) {
 
 
 
+function namesSorter (departmentsArray) {
+
+    let unitedArr = [].concat.apply([], departmentsArray);
+
+    unitedArr.sort((a, b) => {
+
+        if(a.length === b.length) {
+
+            if(a < b) return -1;
+            if(a > b) return 1;
+            return 0;
+        }
+
+        return a.length - b.length;
+
+
+
+    });
+
+    return unitedArr;
+
+}
+
 
 
 
