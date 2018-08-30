@@ -282,9 +282,23 @@ function domainName(url) {
     if ( match != null && match.length > 2 && typeof match[2] === 'string' && match[2].length > 0 ) return match[2].split(".")[0];
 }
 
-var one = domainName("http://github.com/carbonfive/raygun");
-var two = domainName("http://www.zombie-bites.com");
+
+function solve(st,a,b){
+
+    let strArr = st.split("");
+
+    let subArr = strArr.slice(a, b + 1).reverse();
+
+
+    strArr = strArr.filter((el, idx) => {
+        return idx < a || idx > b;
+    });
 
 
 
 
+    strArr.splice(1, 0 , ...subArr);
+
+    return strArr;
+
+}
