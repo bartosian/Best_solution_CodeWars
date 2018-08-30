@@ -124,5 +124,39 @@ function sum(a) {
             }
         }
     }
+}c
+
+
+
+
+
+var moveZeros = function (arr) {
+
+    let zeroArr = [];
+
+    for(let i = 0; i < arr.length; i++) {
+
+        if(arr[i] === 0) {
+            zeroArr.push(arr.splice(i, 1));
+            i--;
+        }
+    }
+
+    return arr.concat(zeroArr);
+
+
 }
+
+// link: https://www.codewars.com/kata/moving-zeros-to-the-end/train/javascript
+
+
+
+
+
+
+
+
+
+
+
 
