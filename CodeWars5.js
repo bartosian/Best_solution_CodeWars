@@ -162,22 +162,103 @@
 //
 
 
-function solution(string) {
-    let arrStr = string.split("");
+// function solution(string) {
+//     let arrStr = string.split("");
+//
+//     let res = arrStr.map((el) => {
+//         if(el === el.toUpperCase()) {
+//             return " " + el;
+//         } else {
+//
+//             return el;
+//         }
+//     });
+//
+//    return res.join("");
+// }
+//
+//
+//
+//
+// solution('camelCasing');
 
-    let res = arrStr.map((el) => {
-        if(el === el.toUpperCase()) {
-            return " " + el;
-        } else {
 
-            return el;
+
+
+
+
+
+
+function sortArray(arr) {
+
+    let evenMap = {};
+    let evenArr;
+    let evenLength;
+    let nextIdx = 0;
+
+
+    for(let i = 0; i < arr.length; i++) {
+
+        if(arr[i] % 2 !== 0) {
+            evenMap[String(i)] = arr[i];
         }
+    }
+
+    evenArr = Object.values(evenMap);
+    evenLength = evenArr.length;
+    evenArr.sort((a,b) => {
+        return a - b;
+
     });
 
-   return res.join("");
+
+    outside: for(let i = 0; i < evenLength; i++) {
+
+        for(let j = nextIdx; j < arr.length; j++) {
+
+            if(arr[j] % 2 !== 0 && arr[j] !== 0) {
+                arr[j] = evenArr[i];
+                nextIdx = j + 1;
+                continue outside;
+
+            }
+
+        }
+
+    }
+
+   return arr;
+
 }
 
 
 
 
-solution('camelCasing');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
