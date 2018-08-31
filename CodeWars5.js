@@ -393,6 +393,50 @@ function deleteNth(arr, n) {
 
 
 
+function replaceLetter(str, let) {
+
+    let map = {};
+
+
+    for(let i = 0; i < str.length; i++) {
+
+        if(!map[str[i]]) {
+            map[str[i]] = 1;
+
+        } else {
+            map[str[i]]++;
+
+        }
+
+    }
+
+    for(let key in map) {
+
+        if(key === ' ') delete map[key];
+    }
+
+    let mapVal = Object.values(map);
+    let biggest = Math.max(...mapVal);
+    let biggestLet;
+
+
+
+    for(let num in map) {
+        if(map[num] === biggest) {
+            biggestLet = num;
+            break;
+        }
+
+    }
+
+    var re = new RegExp(biggestLet,"g");
+
+    str = str.replace(re, let);
+
+    return str;
+
+}
+
 
 
 
