@@ -302,3 +302,95 @@ function solve(st,a,b){
     return strArr;
 
 }
+
+
+
+function deleteNth(arr, n) {
+    let numMap = {};
+
+    arr = arr.filter((el, idx, list) => {
+
+        if(!numMap[String(el)]) {
+            numMap[String(el)] = 1;
+            return true;
+        } else if(numMap[String(el)] <=  n) {
+            numMap[String(el)]++;
+            return true;
+        } else {
+            numMap[String(el)]++;
+            return true;
+        }
+
+
+    });
+
+    console.log(numMap);
+    console.log(arr);
+};
+
+
+
+
+
+
+
+deleteNth ([1,1,1,1],3) // return [1,1]
+
+deleteNth ([20,37,20,21],1) // return [20,37,21]
+
+
+function sumStrings(a, b) {
+    a = "0" + a.replace(/\D/g,"");
+    b = "0" + b.replace(/\D/g,"");
+
+
+    var c = 0;
+    var result = "";
+
+    for(var i=b.length-a.length; i>0; --i) a = "0" + a;
+    for(var i=a.length-b.length; i>0; --i) b = "0" + b;
+
+
+
+    for(var i=a.length-1; i>-1; --i) {
+        c = +a[i] + +b[i] + c;
+
+        result = (c%10) + result;
+
+        c = Math.floor(c/10);
+    }
+
+
+    return result.replace(/^0+/,"");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
