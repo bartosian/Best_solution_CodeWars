@@ -439,6 +439,32 @@ function replaceLetter(str, let) {
 
 
 
+function replace(str) {
+
+    let map = {};
+    let newStr = str.split("");
+
+
+    for(let i = 0; i < newStr.length; i++) {
+
+        if(!map[newStr[i]]) {
+            map[newStr[i]] = 1;
+            newStr[i] = map[newStr[i]];
+
+        } else {
+            map[newStr[i]] += 1;
+            newStr[i] = map[newStr[i]];
+        }
+
+    }
+
+   return newStr.join("");
+
+
+}
+
+
+
 
 
 
