@@ -475,23 +475,27 @@ function replace(str) {
 
 
 
+function add(a, b) {
+    let str1 = a.split("").reverse();
+    let str2 = b.split("").reverse();
+    let sum = [];
+    let reminder = 0;
+
+    for(let i = 0; i < Math.max(str1.length, str2.length); i++) {
+        let num1 = str1[i] ? Number(str1[i]) : 0;
+        let num2 = str2[i] ? Number(str2[i]) : 0;
+        let digit = (num1 + num2 + reminder) % 10;
+        reminder = Math.floor((num1 + num2 + reminder) / 10);
+        sum.unshift(digit);
+    }
+
+    if(reminder) {
+        sum.unshift(reminder);
+    }
+
+    return String(sum.join(""));
+
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Link to Codewars: https://www.codewars.com/kata/525f4206b73515bffb000b21/solutions/javascript

@@ -20,8 +20,8 @@
       <file leaf-file-name="CodeWars5.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CodeWars5.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="458" column="5" lean-forward="true" selection-start-line="443" selection-start-column="3" selection-end-line="458" selection-end-column="5" />
+            <state relative-caret-position="376">
+              <caret line="487" column="38" selection-start-line="487" selection-start-column="38" selection-end-line="487" selection-end-column="38" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -62,8 +62,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -111,12 +111,14 @@
       <workItem from="1535546032287" duration="4794000" />
       <workItem from="1535566255256" duration="1043000" />
       <workItem from="1535632376686" duration="5714000" />
-      <workItem from="1535718748112" duration="9724000" />
+      <workItem from="1535718748112" duration="10036000" />
+      <workItem from="1535734918671" duration="973000" />
+      <workItem from="1536015136585" duration="1192000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23166000" />
+    <option name="totallyTimeSpent" value="25643000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="23" width="1034" height="947" extended-state="0" />
@@ -126,12 +128,12 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4317647" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4317647" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2482353" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2482353" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -148,6 +150,26 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CodeWars5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="479" lean-forward="true" selection-start-line="479" selection-end-line="479" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeWars5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1635">
+          <caret line="474" selection-start-line="474" selection-end-line="474" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CodeWars5.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -195,8 +217,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CodeWars5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="458" column="5" lean-forward="true" selection-start-line="443" selection-start-column="3" selection-end-line="458" selection-end-column="5" />
+        <state relative-caret-position="376">
+          <caret line="487" column="38" selection-start-line="487" selection-start-column="38" selection-end-line="487" selection-end-column="38" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
