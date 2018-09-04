@@ -499,3 +499,84 @@ function add(a, b) {
 
 
 // Link to Codewars: https://www.codewars.com/kata/525f4206b73515bffb000b21/solutions/javascript
+
+// solve("x-(y+z)") = "x-y-z"
+// solve("x-(y-z)") = "x-y+z"
+// solve("u-(v-w-(x+y))-z") = "u-v+w+x+y-z"
+// solve("x-(-y-z)") = "x+y+z"
+
+
+
+function solve(str) {
+    let resArr = [];
+    let strArr = str.split("");
+
+    for(let i = 0; i < strArr.length; i++) {
+
+        if(strArr[i] === "(" || strArr[i] === ")") {
+            strArr.splice(i, 1);
+            i--;
+        }
+
+    }
+
+   let newstrArr = strArr.join("");
+
+    newstrArr = newstrArr.replace(/--/g, "+");
+    newstrArr = newstrArr.replace(/\+\+/g, "+");
+    newstrArr = newstrArr.replace(/-\+/g, "-");
+    newstrArr = newstrArr.replace(/\+-/g, "-");
+
+    return newstrArr;
+
+}
+
+
+
+
+let mass = [['-','-','-','-','-','-','-'],
+    ['-','-','-','-','-','-','-'],
+    ['-','-','-','R','Y','Y','R'],
+    ['-','-','-','Y','Y','R','Y'],
+    ['-','-','-','Y','R','R','Y'],
+    ['-','-','Y','R','Y','R','R']];
+
+function connectFour(arr) {
+
+    for(let i = 0; i < 6; i++) {
+
+        for(let j = 0; j < 7; j++) {
+
+            if((arr[i][j] + arr[i][j + 1] + arr[i][j + 2] + arr[i][j + 3]) === "RRRR") return "R";
+            if(i <= 2 && (arr[i][j] + arr[i + 1][j] + arr[i + 2][j] + arr[i + 3][j]) === "RRRR") return "R";
+            if(i <= 2 && (arr[i][j] + arr[i + 1][j + 1] + arr[i + 2][j + 2] + arr[i + 3][j + 3]) === "RRRR") return "R";
+            if(i <= 2 && (arr[i][j] + arr[i + 1][j - 1] + arr[i + 2][j - 2] + arr[i + 3][j - 3]) === "RRRR") return "R";
+
+            if((arr[i][j] + arr[i][j + 1] + arr[i][j + 2] + arr[i][j + 3]) === "YYYY") return "Y";
+            if(i <= 2 && (arr[i][j] + arr[i + 1][j] + arr[i + 2][j] + arr[i + 3][j]) === "YYYY") return "Y";
+            if(i <= 2 && (arr[i][j] + arr[i + 1][j + 1] + arr[i + 2][j + 2] + arr[i + 3][j + 3]) === "YYYY") return "Y";
+            if(i <= 2 && (arr[i][j] + arr[i + 1][j - 1] + arr[i + 2][j - 2] + arr[i + 3][j - 3]) === "YYYY") return "Y";
+
+
+        }
+
+    }
+
+    if(String(arr).indexOf("_") !== -1) return 'in progress';
+    return 'draw';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
