@@ -567,12 +567,12 @@ function connectFour(arr) {
 }
 
 
-function multiplay(a, b) {
-    console.log(a, b);
+function multiplayBig(a, b) {
+
     a = a.split("").reverse();
     b = b.split("").reverse();
 
-    var sum = [];
+    var mul = [];
     var remainder = 0;
     for (var i = 0; i < Math.max(a.length, b.length); i++) {
         var x = parseInt(a[i]) ? parseInt(a[i]) : 0;
@@ -585,15 +585,6 @@ function multiplay(a, b) {
 
     return sum.join("");
 }
-
-
-
-
-
-
-
-
-
 
 
 
