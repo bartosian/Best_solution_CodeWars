@@ -567,6 +567,24 @@ function connectFour(arr) {
 }
 
 
+function multiplay(a, b) {
+    console.log(a, b);
+    a = a.split("").reverse();
+    b = b.split("").reverse();
+
+    var sum = [];
+    var remainder = 0;
+    for (var i = 0; i < Math.max(a.length, b.length); i++) {
+        var x = parseInt(a[i]) ? parseInt(a[i]) : 0;
+        var y = parseInt(b[i]) ? parseInt(b[i]) : 0;
+        var digit = (x + y + remainder) % 10;
+        remainder = Math.floor((x + y + remainder) / 10);
+        sum.unshift(digit);
+    }
+    if (remainder) {sum.unshift(remainder)}
+
+    return sum.join("");
+}
 
 
 
