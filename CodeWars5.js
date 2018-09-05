@@ -625,6 +625,30 @@ function uniqueInOrder(str) {
 }
 
 
+function spinWords(str) {
+    if(str.includes(" ")) {
+        str = str.split(" ");
+    } else {
+        if(str.length >= 5) return str.split("").reverse().join("");
+        return str;
+    }
+
+    str = str.map(s => {
+        if(s.length >= 5) {
+            return s.split("").reverse().join("");
+        }
+
+        return s;
+
+    });
+
+    return str.join(" ");
+
+}
+
+
+
+
 
 
 
