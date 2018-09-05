@@ -605,4 +605,45 @@ return arr1;
 
 }
 
+//uniqueInOrder('AAAABBBCCDAABBB') == ['A', 'B', 'C', 'D', 'A', 'B']
+
+function uniqueInOrder(str) {
+
+    let arr = str.split("");
+
+    for(let i = 0; i < arr.length; i++) {
+
+        if(arr[i] === arr[i + 1]) {
+            arr.splice(i, 1);
+            i--;
+        }
+
+    }
+
+    return arr;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

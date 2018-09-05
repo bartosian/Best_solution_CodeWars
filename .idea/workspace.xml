@@ -20,8 +20,8 @@
       <file leaf-file-name="CodeWars5.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CodeWars5.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="589" lean-forward="true" selection-start-line="589" selection-end-line="605" selection-end-column="1" />
+            <state relative-caret-position="172">
+              <caret line="609" selection-start-line="609" selection-end-line="624" selection-end-column="1" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -116,12 +116,12 @@
       <workItem from="1536015136585" duration="6578000" />
       <workItem from="1536082175408" duration="1831000" />
       <workItem from="1536088337956" duration="228000" />
-      <workItem from="1536107511231" duration="503000" />
+      <workItem from="1536107511231" duration="975000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33591000" />
+    <option name="totallyTimeSpent" value="34063000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="23" width="1034" height="947" extended-state="0" />
@@ -250,8 +250,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CodeWars5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="589" lean-forward="true" selection-start-line="589" selection-end-line="605" selection-end-column="1" />
+        <state relative-caret-position="172">
+          <caret line="609" selection-start-line="609" selection-end-line="624" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
