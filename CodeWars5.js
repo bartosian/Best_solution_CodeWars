@@ -663,6 +663,61 @@ function multiply(num) {
 
 }
 
+//
+// largestSum([-1,-2,-3]) == 0
+// largestSum([]) == 0
+// largestSum([1,2,3]) == 6
+
+
+
+
+
+function largestSum(arr){
+    if(!String(arr).includes("-")) {
+        return arr.reduce((sum,el) => {
+            return sum += el;
+        }, 0);
+    }
+
+    if(arr.every(el => el < 0)) {
+        return 0;
+    }
+
+    let maxSum = arr[0];
+
+    for(let i = 0; i < arr.length; i++) {
+
+            let newSum = arr.slice(i, arr.length).reduce((sum, el) => sum += el, 0);
+            if(newSum > maxSum) {
+                maxSum = newSum;
+            }
+
+
+
+    }
+
+    return maxSum;
+}
+
+function largestSum(arr){
+    var max = 0, cur = 0;
+    for (var i of arr) {
+        cur += i;
+        if (cur < 0) cur = 0;
+        if (cur > max) max = cur;
+    }
+    return max;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
